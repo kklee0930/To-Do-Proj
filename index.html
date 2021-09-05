@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Dos!🤔</title>
+    <link rel="stylesheet" href="hidden.css" />
+  </head>
+  <body>
+    <div id="starter" class="startPhase">
+      <div id="jsWeather">
+        <span></span>
+      </div>
+      <div id="jsClock">00:00:00</div>
+      <div id="Welcome">Welcome! Who are you?</div>
+
+      <form id="jsId" action="">
+        <input
+          id="jsInputName"
+          type="text"
+          placeholder="Type your name"
+          required
+          maxlength="30"
+        />
+        <button id="jsSubmit" type="submit">Log in</button>
+      </form>
+
+      <div id="randomQuote">
+        <h2 id="quote"></h1>
+        <h4 id="author"></h3>
+      </div>
+    </div>
+
+    <div id="display" class="displayPhase">
+      <div id="divHello">
+        <span><h1 id="jsHello"></h1> </span
+        ><span><button id="jsLogout" class="hidden">Log Out</button></span>
+      </div>
+
+      <form id="jsToDo" class="hidden">
+        <input
+          id="jsToDoInput"
+          type="text"
+          required
+          maxlength="100"
+          placeholder="Type your To-Do"
+        />
+        <button id="toDoSubmit" type="submit">Submit</button>
+      </form>
+      <div id="jsToDoListForm" class="hidden">
+        <ul id="jsToDoList">
+          <h1>To-Dos</h1>
+        </ul>
+      </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="clock.js"></script>
+    <script src="quotes.js"></script>
+    <script src="weather.js"></script>
+    <script src="toDo.js"></script>
+    <script src="background.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>
